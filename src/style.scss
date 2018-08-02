@@ -40,9 +40,67 @@
 .section {
     width: 100%;
     flex: 1;
+    overflow-y: scroll;
+    .banner {
+        width: 100%;
+        height: px2rem(220px);
+        .swp {
+            div {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .list {
+        margin-top: 5px;
+        ul {
+            display: flex;
+            text-align: center;
+            margin-top: 10px;
+            li {
+                flex: 1;
+            }
+        }
+    }
+    .updwon {
+        width: 100%;
+        height: 100px;
+        margin-top: 5px;
+        dl {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            dt {
+                margin-top: 5px;
+            }
+            dd {
+                width: 100%;
+                height: 100%;
+                flex: 1;
+                .banner2 {
+                    width: 100%;
+                    height: 100%;
+                    .swp {
+                        div {
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .footer {
     width: 100%;
     height: px2rem(45px);
-    background: orangered;
+    ul {
+        display: flex;
+        text-align: center;
+        margin-top: px2rem(4px);
+        li {
+            flex: 1;
+        }
+    }
 }

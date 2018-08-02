@@ -17,17 +17,81 @@
         <header class="header">
             <h2>淘</h2><p><input type="text" placeholder="寻找宝贝店铺"></p>
         </header>
-        <section class="section">index</section>
+        <section class="section">
+            <div class="swiper-container banner">
+                <div class="swiper-wrapper swp">
+                    <div class="swiper-slide"><img src="./1.jpg"></div>
+                    <div class="swiper-slide"><img src="./2.jpg"></div>
+                    <div class="swiper-slide"><img src="./3.jpg"></div>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><i class="icon iconfont icon-01"></i><h6>天猫</h6></li>
+                    <li><i class="icon iconfont icon-02"></i><h6>聚划算</h6></li>
+                    <li><i class="icon iconfont icon-03"></i><h6>天猫国际</h6></li>
+                    <li><i class="icon iconfont icon-06"></i><h6>外卖</h6></li>
+                    <li><i class="icon iconfont icon-08"></i><h6>天猫超市</h6></li>
+                </ul>
+                <ul>
+                    <li><i class="icon iconfont icon-xinlang1"></i><h6>充值中心</h6></li>
+                    <li><i class="icon iconfont icon-QQ_weibo"></i><h6>飞猪旅行</h6></li>
+                    <li><i class="icon iconfont icon-twitter2"></i><h6>领金币</h6></li>
+                    <li><i class="icon iconfont icon-pingguo"></i><h6>拍卖</h6></li>
+                    <li><i class="icon iconfont icon-shoucang"></i><h6>分类</h6></li>
+                </ul>
+            </div>
+            <div class="updwon">
+                <dl>
+                    <dt>
+                        <img src="./tout.jpg">
+                    </dt>
+                    <dd>
+                    <div class="swiper-container banner2">
+                            <div class="swiper-wrapper swp">
+                                <div class="swiper-slide">
+                                    <p>问问而我想吃啊啊所大群二群</p>
+                                    <p>是舍得舍得多所擦奥所多</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p>问问而我想吃按时吃才是</p>
+                                    <p>是舍得舍得多所擦奥所多</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p>问问而我想吃婢女不错VB从VB</p>
+                                    <p>是舍得舍得多所擦奥所多</p>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </section>
         <footer class="footer">
             <ul>
-                <li><i class="icon iconfont icon-zanting"></i><h6>首页</h6></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><i class="icon iconfont icon-shouye"></i><h6>首页</h6></li>
+                <li><i class="icon iconfont icon-daishouhuo-01"></i><h6>物流</h6></li>
+                <li><i class="icon iconfont icon-gouwuche"></i><h6>购物车</h6></li>
+                <li><i class="icon iconfont icon-wode"></i><h6>我的淘宝</h6></li>
+                <li><i class="icon iconfont icon-gengduo"></i><h6>更多</h6></li>
             </ul>
         </footer>
     </div>
-    <script src="./flexible.js"></script>
+    <script src="./swiper.min.js"></script>
+    <script>
+        new Swiper('.banner', {
+            autoplay: {
+                delay: 1000
+            },
+            loop:true
+        })
+        new Swiper('.banner2', {
+            autoplay: {
+                delay: 1000
+            },
+            loop:true,
+            direction: "vertical"
+        })
+    </script>
 </body>
 </html>
