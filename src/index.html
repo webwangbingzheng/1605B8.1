@@ -24,6 +24,11 @@
                     <div class="swiper-slide"><img src="./2.jpg"></div>
                     <div class="swiper-slide"><img src="./3.jpg"></div>
                 </div>
+                <ol class="swiper-pagination ol1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
             </div>
             <div class="list">
                 <ul>
@@ -83,7 +88,10 @@
             autoplay: {
                 delay: 1000
             },
-            loop:true
+            loop:true,
+            pagination: {
+                el: '.ol1'
+            }
         })
         new Swiper('.banner2', {
             autoplay: {
